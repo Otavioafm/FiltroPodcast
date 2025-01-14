@@ -1,0 +1,30 @@
+{
+  "name": "filtro-conteudo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start:dev": "tsx --env-file=.env src/index.ts",
+    "start:watch": "tsx watch --env-file=.env src/index.ts",
+    "dist": "tsup src",
+    "start:dist": "npm run dist && node/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "filtro-conteudo": "file:",
+    "ts-node": "^10.9.2"
+  }
+}
